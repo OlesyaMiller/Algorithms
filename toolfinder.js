@@ -11,7 +11,6 @@ const toolFinder = (tools, startIndex, target) => {
       const right = secondHalf.find(tool => tool === target)
       const left = firstHalf.find(tool => tool === target)
       // console.log(left, right)
-  
       if(left) {
         return startIndex - tools.indexOf(left)
       } else {
@@ -20,6 +19,5 @@ const toolFinder = (tools, startIndex, target) => {
     }
 }
   
-  
-  const tools = ['hammer', 'plyers', 'drill', 'hello', 'saw']
-  console.log(toolFinder(tools, 2, 'hello'))
+const tools = ['hammer', 'plyers', 'drill', 'hello', 'saw']
+console.log(toolFinder(tools, 2, 'hello'))
